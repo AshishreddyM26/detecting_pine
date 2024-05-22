@@ -2,7 +2,6 @@
 
 import ultralytics 
 from ultralytics import YOLO
-
 from scipy.optimize import linear_sum_assignment
 import matplotlib.pyplot as plt
 from scipy import stats
@@ -11,7 +10,6 @@ import pandas as pd
 import numpy as np
 import math
 import os 
-
 
 # -- Utility class function
 
@@ -43,7 +41,7 @@ class det_utilities:
                 conf = float(tensor[i].boxes.conf[j])  # Confidence
                 x_min, y_min = x_center - (w / 2), y_center - (h / 2)
                 if y_center >= 660:
-                    frame_list.append((frame, 0, np.round(x_min, 4), np.round(y_min, 4),                   # -- include frame_id - id of the bbox if necessary, usually helps in tracking
+                    frame_list.append((frame, 0, np.round(x_min, 4), np.round(y_min, 4),                   # -- include frame_id (here it is directly set to '0') - id of the bbox if necessary, usually helps in tracking
                                        np.round(w, 4), np.round(h, 4), np.round(conf, 3), -1, -1, -1))
             
             processed_list.append(frame_list)
@@ -371,9 +369,6 @@ class det_utilities:
         plt.ylim((2160, 0))
         plt.title(title)
         plt.show()
-
-
-# -- add the significance test codes here -- then we are done for the step 1
 
     def significance_test(self, dfs):
         """
