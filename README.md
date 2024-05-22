@@ -13,3 +13,5 @@ like BoT-SORT, ByteTrack, SORT, DeepSORT, MAATrack.
 So, now onto finding the best tracking algorithm that suits well with the data using the object detection model YOLOv9c.
 
 Will update the further details.
+
+https://github.com/AshishreddyM26/detecting_pine/blob/main/overlapping_boxplot.png
