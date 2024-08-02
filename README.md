@@ -6,4 +6,4 @@ Purpose: Getting the accurate count in the Precision Agriculture is a challengin
 Detection Models: YOLOv8 (n, s, m, l), YOLOv9 (t, s, m, c), YOLOv10 (n, s, m, b)
 Tracking Alg: BoT-SORT, ByteTrack, SORT.
 
-[ This approach has been modified in AshishReddyM26/model_analysis repo ]
+[ This approach has been modified in AshishreddyM26/model_analysis repo ]
