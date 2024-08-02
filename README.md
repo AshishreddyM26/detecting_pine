@@ -1,15 +1,7 @@
-Our goal to find out the number of cameras are required in Precision Agriculture where the system detects the number of crops in a given nursery farm, efficiently and even faster. 
 
-The data was collected from differnt nursery farms with different cameras.
+The research on this project is developing the best combination of Detection model and Tracking algorithm, and how the Field of Views' (FoV) are affecting the quality of detections.
 
-The data has been annotated using CVAT and trained with different state of the art object detection models. Then evaluated using Intersection Over Union metric for all the bounding boxes. 
-Depending upon the results obtained, found that viewing angles were affecting the IoU scores of these bounding boxes across the frame, and discovered 
-the closest viewing angles are posessing the highest mean IoU  and the farther angles were giving the lower mean IoU scores. Finally, we found out that 
-YOLOv9c performed relatively well compared to the other detection models.
+Purpose: Getting the accurate count in the Precision Agriculture is a challenging task, so we tried to explore and build best, light weight combination of the detection model and tracking algorithm that delivers the accurate count of tiny objects which can also be used in real-time.
 
-As our goal to find out the number of cameras are required, in order to get this, we need to track every single crop across different frames using a tracking algorithm
-like BoT-SORT, ByteTrack, SORT, DeepSORT, MAATrack.
-
-So, now onto finding the best tracking algorithm that suits well with the data using the object detection model YOLOv9c.
-
-Will update further details.
+Detection Models: YOLOv8 (n, s, m, l), YOLOv9 (t, s, m, c), YOLOv10 (n, s, m, b)
+Tracking Alg: BoT-SORT, ByteTrack, SORT.
